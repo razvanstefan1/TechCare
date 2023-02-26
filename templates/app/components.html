@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  
+    <meta name="viewport" X-Content-Type-Options="nosniff" content="width=device-width,  initial-scale=1">
+    <title>TechCare</title>
+    {% load static %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    {% load static %}
+    <link href="{% static 'design.css'%}" rel="stylesheet" type="text/css">
+  </head>
+  <body class="body row">
+    <div class="d-flex flex-column flex-shrink-0 p-3 menu col-2">
+        <a href="{% url 'techcare' %}" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none gray">
+          {% load static %}  
+          <img src="{% static 'logo.png'%}" class="logo">
+        </a>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+            <a href="{% url 'components' %}" class="nav-link active" aria-current="page" style="background-color:#FEFBF6; color:#94B5C0">
+              {% load static %}
+              <img src = "{% static 'content.png'%}" width="16" height="16">
+               Components
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'documents' %}" class="nav-link gray">
+              {% load static %}
+              <img src = "{% static 'docs.png'%}" width="16" height="16">
+               Documents
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'services' %}" class="nav-link gray">
+              {% load static %}
+              <img src = "{% static 'service.png'%}" width="16" height="16">
+               Services
+            </a>
+          </li>
+        </ul>
+    </div>
+    <div class="d-flex flex-column flex-shrink-0 p-3 components col row">
+        <h1 class="purple" style="margin-left: 3%;"> Components </h1>
+        <hr class="bold_hr_purple" style="margin-left: 3%; width: 86%;">
+        <div class="box">
+            <div class="box content" style="margin-left: 2%;">
+                <div class="row">
+                    <div class="col mt-auto mb-auto">
+                        <h3 style="margin-top: 2%;"> ASUS PRIME B550-PLUS </h3>
+                    </div>
+                    <div class="col mt-auto mb-auto" style="text-align:right">
+                        <a href="#" class="btn btn-secondary btn-lg active mt-auto mb-auto" role="button" aria-pressed="true">Give me a component!</a>
+                    </div>
+                </div>
+                <hr class ="bold_hr">
+                <div class="topnav">
+                  {% load static %}
+                    <img src = "{% static 'Search.png'%}" width="32" height="32">
+                    <input type="text" placeholder="Search..">
+                </div>
+                <div class="col pb-5" style="margin-top:2%;">
+                    <div class="row">
+                        <div class="col-2">
+                          {% load static %}
+                            <img src="{% static 'amd.jpg'%}" class="thumbnail" height="80">
+                        </div>
+                        <div class="col-10">
+                            <h5> AMD Ryzen 5 5600</h5>
+                            <p class="gray"> Procesor AMD Ryzen 5 5600 3.5GHz box </p>
+                            <p class="gray"> 758,99 RON </p>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top:1%;">
+                        <div class="col-2">
+                          {% load static %}
+                            <img src="{% static 'nvidia.jpg'%}" class="thumbnail">
+                        </div>
+                        <div class="col-10">
+                            <h5> GeForce RTX 2060 </h5>
+                            <p class="gray"> Placa video GIGABYTE GeForce RTX 2060 D6 6GB GDDR6 192-bit </p>
+                            <p class="gray"> 1.799,99 RON </p>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top:1%;">
+                        <div class="col-2">
+                          {% load static %}
+                            <img src="{% static 'samsung.jpg'%}" class="thumbnail" >
+                        </div>
+                        <div class="col-10">
+                            <h5> Samsung M.2 1TB Storage </h5>
+                            <p class="gray"> SSD Samsung 980 1TB PCI Express 3.0 x4 M.2 2280 </p>
+                            <p class="gray"> 479,99 RON </p>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top:1%;">
+                        <div class="col-2">
+                          {% load static %}
+                            <img src="{% static 'amd2.jpg'%}" class="thumbnail" height="80" >
+                        </div>
+                        <div class="col-10">
+                            <h5> AMD Ryzen 9 5900X </h5>
+                            <p class="gray"> Procesor AMD Ryzen 9 5900X 3.7GHz box </p>
+                            <p class="gray"> 1.909,99 RON </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+<!-- <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  
+    <meta name="viewport" X-Content-Type-Options="nosniff" content="width=device-width,  initial-scale=1">
+    <title>TechCare</title>
+    {% load static %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    {% load static %}
+    <link href="{% static 'design.css'%}" rel="stylesheet" type="text/css">
+  </head>
+  <body class="body row">
+    <div class="d-flex flex-column flex-shrink-0 p-3 menu col-2">
+        <a href="{% url 'techcare' %}" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none gray">
+          {% load static %}  
+          <img src="{% static 'logo.png'%}" class="logo">
+        </a>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+            <a href="{% url 'components' %}" class="nav-link active" aria-current="page" style="background-color:#FEFBF6; color:#94B5C0">
+              {% load static %}
+              <img src = "{% static 'content.png'%}" width="16" height="16">
+               Components
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'documents' %}" class="nav-link gray">
+              {% load static %}
+              <img src = "{% static 'docs.png'%}" width="16" height="16">
+               Documents
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'services' %}" class="nav-link gray">
+              {% load static %}
+              <img src = "{% static 'service.png'%}" width="16" height="16">
+               Services
+            </a>
+          </li>
+        </ul>
+    </div>
+    <div class="d-flex flex-column flex-shrink-0 p-3 components col row">
+        <h1 class="purple" style="margin-left: 3%;"> Components </h1>
+        <hr class="bold_hr_purple" style="margin-left: 3%; width: 86%;">
+        <div class="box">
+            <div class="box content" style="margin-left: 2%;">
+                <h3 style="margin-top: 2%;"> Device Name </h3>
+                <hr class ="bold_hr">
+                <div class="topnav">
+                  {% load static %}
+                    <img src = "{% static 'Search.png'%}" width="32" height="32">
+                    <input type="text" placeholder="Search..">
+                </div>
+                <div class="col" style="margin-top:2%;">
+                    <div class="row">
+                        <div class="col-2">
+                          {% load static %}
+                            <img src="{% static 'keyboard.png'%}" class="thumbnail">
+                        </div>
+                        <div class="col-10">
+                            <h5> Keyboard </h5>
+                            <p class="gray"> Keyboard is a device that is used to type on a computer. </p>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top:1%;">
+                        <div class="col-2">
+                          {% load static %}
+                            <img src="{% static 'mouse.png'%}" class="thumbnail">
+                        </div>
+                        <div class="col-10">
+                            <h5> Mouse </h5>
+                            <p class="gray"> Mouse is a device that is used to move the cursor on a computer. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
+ -->

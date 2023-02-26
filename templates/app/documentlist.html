@@ -1,0 +1,25 @@
+<div class="documentlist">
+    <ul>
+        <!-- {% for document in documents %}
+        <li>
+            <a href="{{ document.pdf.url }}">{{ document.title }}</a>
+        </li>
+        {% endfor %} -->
+        <!-- {% for doc in documents %}
+        <li>
+            <a href="{{doc.url}}" download> {{doc.name}}</a>
+        </li>
+        {% endfor %}     -->
+        <!-- {% for doc in documents %}
+         <a href="{{doc.url}}" target='_blank'> {{doc.name}}</a>
+        {% endfor %} -->
+
+        <!-- {% for doc in documents %}
+         <a href="{{doc.url}}"  download> {{doc.name}}</a>
+        {% endfor %}         -->
+
+        {% for doc in documents %}
+         <a href="{% url 'view_pdf' title=doc.name %}" target='_blank'> {{doc.name}}</a>
+        {% endfor %}
+    </ul>
+</div>
